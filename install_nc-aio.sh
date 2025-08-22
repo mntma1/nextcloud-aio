@@ -19,7 +19,7 @@ cat<<ende
  
 Öffne nun im Browser: 
  
-  echo https://$(hostname -I | awk '{print $1}' | cut -d/ -f1):8080
+  https://$(hostname -I | awk '{print $1}' | cut -d/ -f1):8080
 
 ende
 exit 0
