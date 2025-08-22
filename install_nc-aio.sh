@@ -19,8 +19,7 @@ cat<<ende
  
 Öffne nun im Browser: 
  
-  https.//$(ip addr show ens18 | grep 'inet ' | awk '{print $2}' | cut -d/ -f1):8080
- 
-auf.
+  echo https://$(hostname -I | awk '{print $1}' | cut -d/ -f1):8080
+
 ende
 exit 0
