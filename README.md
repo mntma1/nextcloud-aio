@@ -23,10 +23,12 @@ git clone https://github.com/mntma1/nextcloud-aio.git
 chmod +x install_nc-aio && ./install_nc-aio.sh
 ```
  
-## Now goto: [Setup Nextcloud AIO](https://192.168.17.55:8080)
-## Now goto: Setup Nextcloud AIO -> https://192.168.xxx.xxx:8080
+6. Now goto: [Setup Nextcloud AIO](https://192.168.17.55:8080)
+7. Now goto: Setup Nextcloud AIO -> https://192.168.xxx.xxx:8080
 
-![3bfbcc5093f69c42566a3b3707ff48e8](https://github.com/user-attachments/assets/89760348-c18a-4900-a819-d5a89a0ea9cd)
+![3bfbcc5093f69c42566a3b3707ff48e8](https://github.com/user-attachments/assets/315eae5f-495d-46dd-a9f5-451b5069e270)
+
+
  
 ### File: install_nc-aio.sh
 ```
