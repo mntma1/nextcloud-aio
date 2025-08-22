@@ -51,9 +51,9 @@ ghcr.io/nextcloud-releases/all-in-one:latest
 cat<<ende
  
 Öffne nun im Browser: 
- 
-  https.//$(ip addr show ens18 | grep 'inet ' | awk '{print $2}' | cut -d/ -f1):8080
- 
+
+    https://$(hostname -I | awk '{print $1}' | cut -d/ -f1):8080
+
 auf.
 ende
 exit 0
