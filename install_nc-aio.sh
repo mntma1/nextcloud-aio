@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+# Created by Manfred - 22.08.2025 16:23 Uhr
 sudo mkdir /ncdata
 docker volume create nextcloud_aio_nextcloud_data
 docker run \
