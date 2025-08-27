@@ -4,7 +4,7 @@
 ```
 curl -sSL https://get.docker.com/ | CHANNEL=stable sh
 ```
-2. Füge dich der Gruppe **docker** hinzu
+2. Füge dich zur Gruppe **docker** hinzu
  
 ```
 sudo usermod -aG docker $USER
@@ -23,8 +23,7 @@ git clone https://github.com/mntma1/nextcloud-aio.git
 chmod +x install_nc-aio && ./install_nc-aio.sh
 ```
  
-6. Now goto: [Setup Nextcloud AIO](https://192.168.17.55:8080)
-7. Now goto: Setup Nextcloud AIO -> https://192.168.xxx.xxx:8080
+6. Öffne im Browser das Nextcloud-AIO Setup -> https://192.168.xxx.xxx:8080
 
 ![3bfbcc5093f69c42566a3b3707ff48e8](https://github.com/user-attachments/assets/315eae5f-495d-46dd-a9f5-451b5069e270)
 
