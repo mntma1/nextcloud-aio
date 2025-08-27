@@ -9,7 +9,7 @@ curl -sSL https://get.docker.com/ | CHANNEL=stable sh
 ```
 sudo usermod -aG docker $USER
 ```
-3. Drücker **[STRG]+D** und dann öffne ein neues Termianl
+3. Drücker **[STRG]+D**, dann melde dich neu an.
  
 4. Lade das Ropository **nextcloud-aio** herunter
  
@@ -18,45 +18,21 @@ git clone https://github.com/mntma1/nextcloud-aio.git
 ```
  
 5. cd nextcloud-aio und feuere das Script ab.
- 
+
 ```
 chmod +x install_nc-aio && ./install_nc-aio.sh
 ```
+> [!NOTE]
+> Gebe das Verzeichnis an, in welchem die Benutzerdaten gespeichert werden sollen.
+
+> [!WARNING]
+> Kein "/" am Ende!
+>> Zum Beispiel: /mnt/ssd
  
-6. Öffne im Browser das Nextcloud-AIO Setup -> https://192.168.xxx.xxx:8080
+6. Öffne im Browser das Nextcloud-AIO Setup => https://IP:8080
 
 ![3bfbcc5093f69c42566a3b3707ff48e8](https://github.com/user-attachments/assets/315eae5f-495d-46dd-a9f5-451b5069e270)
 
 
- 
-### File: install_nc-aio.sh
-```
-#!/usr/bin/bash
-sudo mkdir /ncdata # Or an mountpoint to an external data carrier
-docker volume create nextcloud_aio_nextcloud_data
-docker run \
---init \
---sig-proxy=false \
---name nextcloud-aio-mastercontainer \
---restart always \
---publish 8080:8080 \
---env APACHE_PORT=11000 \
---env APACHE_IP_BINDING=0.0.0.0 \
---env APACHE_ADDITIONAL_NETWORK="" \
---env SKIP_DOMAIN_VALIDATION=false \
---env NEXTCLOUD_DATADIR="/ncdata" \ # Directory or mountpoint
---volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
---volume /var/run/docker.sock:/var/run/docker.sock:ro \
-ghcr.io/nextcloud-releases/all-in-one:latest
 
-cat<<ende
- 
-Öffne nun im Browser: 
-
-    https://$(hostname -I | awk '{print $1}' | cut -d/ -f1):8080
-
-auf.
-ende
-exit 0
-```
 
