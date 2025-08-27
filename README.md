@@ -20,7 +20,8 @@ git clone https://github.com/mntma1/nextcloud-aio.git
 5. cd nextcloud-aio und feuere das Script ab.
 
 ```
-chmod +x install_nc-aio && ./install_nc-aio.sh
+cd nextcloud-aio
+./install_nc-aio.sh
 ```
 > [!NOTE]
 > Gebe das Verzeichnis an, in welchem die Benutzerdaten gespeichert werden sollen.
