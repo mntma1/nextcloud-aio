@@ -1,6 +1,8 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 # Created by Manfred - 22.08.2025 16:23 Uhr
-sudo mkdir /ncdata
+
+sudo mkdir /ncdata # Datenverzeichnis oder Mountpoint
+sudo chown $USER: /ncdata
 docker volume create nextcloud_aio_nextcloud_data
 docker run \
 --init \
@@ -12,15 +14,8 @@ docker run \
 --env APACHE_IP_BINDING=0.0.0.0 \
 --env APACHE_ADDITIONAL_NETWORK="" \
 --env SKIP_DOMAIN_VALIDATION=false \
---env NEXTCLOUD_DATADIR="/ncdata" \
+--env NEXTCLOUD_DATADIR="/ncdata" \ # Für UserData: Hier sollte genug Speicherplatz zur Verfügung stehen!  
 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
 --volume /var/run/docker.sock:/var/run/docker.sock:ro \
 ghcr.io/nextcloud-releases/all-in-one:latest
-cat<<ende
- 
-Öffne nun im Browser: 
- 
-  https://$(hostname -I | awk '{print $1}' | cut -d/ -f1):8080
-
-ende
 exit 0
