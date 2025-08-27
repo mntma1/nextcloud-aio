@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Created by Manfred - 22.08.2025 16:23 Uhr
 
-read -p 'Das Datenerverzeichnis bitte: ' UDIR 
+read -p 'Das Benutzerverzeichnis bitte: ' UDIR 
 sudo mkdir $UDIR; sudo chown $USER: $UDIR;
 docker volume create nextcloud_aio_nextcloud_data
 docker run \
