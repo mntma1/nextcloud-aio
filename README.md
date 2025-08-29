@@ -24,7 +24,7 @@ cd nextcloud-aio
 ./install_nc-aio.sh
 ```
 > [!NOTE]
-> Gebe das Verzeichnis an, in welchem die Benutzerdaten gespeichert werden sollen.
+> Gebe das Verzeichnis an, in welchem die  Daten der Benutzer gespeichert werden sollen.
 
 > [!WARNING]
 > Kein "/" am Ende!
