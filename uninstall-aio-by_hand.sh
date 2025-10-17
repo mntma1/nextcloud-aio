@@ -6,7 +6,7 @@ cat<<anfang
 
     Deinstalliere nun nextcloud-aio. 
 
-    .....Wartenn
+    .....Warten
 
 anfang
 sleep 3
