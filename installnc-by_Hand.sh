@@ -22,7 +22,7 @@ echo
 echo 'Wenn Du diesen Wert auf einen anderen Wert als 443 ändern,' 
 echo 'kannst Du ihn hinter einem Webserver oder Reverse-Proxy ausführen,'
 echo 'wie Apache, Nginx, Caddy, Cloudflare. Für einen Proxy verwende ich immer Port 11000'
-echo ================================================================================================================================      
+echo =======================================================================================      
 read -p 'Den ApachePort bitte: ' APORT
 
 clear
