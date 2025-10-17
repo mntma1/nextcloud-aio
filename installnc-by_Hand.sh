@@ -15,15 +15,15 @@ echo 'Unter welchen Domainnamen soll deine neue Nextclou erreichbar sein?'
 echo ======================================================================      
 read -p 'Den Domain Namen Bitte: ' NCDOMAIN
 echo
-echo 'Ein sicher Passwot. Bitte gut kerken'
+echo 'Ein sicher Passwot für admin. Bitte gut kerken'
 echo ======================================================================      
 read -p 'Das adminPasswort bitte: ' APASSWD
 echo
-echo 'Changing this to a different value than 443 will allow you to run it behind a web server or reverse proxy'
-echo 'like Apache, Nginx, Caddy, Cloudflare.'
-echo =============================================================================================================      
+echo 'Wenn Du diesen Wert auf einen anderen Wert als 443 ändern, kannst Du ihn hinter einem Webserver oder Reverse-Proxy ausführen,'
+echo 'wie Apache, Nginx, Caddy, Cloudflare. Für einen Proxy verwende ich immer Port 11000 
+echo ================================================================================================================================      
 read -p 'Den ApachePort bitte: ' APORT
-#--------------------
+
 clear
 echo Verzeichnisse werden erstellt und Dateien kopiert.
 echo ===================================================
