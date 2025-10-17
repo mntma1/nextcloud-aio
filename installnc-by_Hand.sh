@@ -19,7 +19,8 @@ echo 'Ein sicher Passwot für admin. Bitte gut kerken'
 echo ======================================================================      
 read -p 'Das adminPasswort bitte: ' APASSWD
 echo
-echo 'Wenn Du diesen Wert auf einen anderen Wert als 443 ändern, kannst Du ihn hinter einem Webserver oder Reverse-Proxy ausführen,'
+echo 'Wenn Du diesen Wert auf einen anderen Wert als 443 ändern,' 
+echo 'kannst Du ihn hinter einem Webserver oder Reverse-Proxy ausführen,'
 echo 'wie Apache, Nginx, Caddy, Cloudflare. Für einen Proxy verwende ich immer Port 11000'
 echo ================================================================================================================================      
 read -p 'Den ApachePort bitte: ' APORT
