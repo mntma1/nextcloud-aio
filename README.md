@@ -35,3 +35,10 @@ cd nextcloud-aio
 ![3bfbcc5093f69c42566a3b3707ff48e8](https://github.com/user-attachments/assets/315eae5f-495d-46dd-a9f5-451b5069e270)
 
 
+# Das Ganze geht noch einfacher und bequemer. 
+### Diese Installation läuft auch wesendlich flotter.
+
+**Feuer einfach dieses Script ab:**
+```
+./installnc-aio-by_hand.sh
+```
