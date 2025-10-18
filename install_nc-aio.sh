@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # Created by Manfred - 22.08.2025 16:23 Uhr
-echo 'Wo sollen die Benuzer-Dateien gespeichert werden(Da sollte genug Plattenplatz verfügbar sein)?'
+#
+clear
+echo
+echo 'Wo sollen die Benuzer-Dateien gespeichert werden'
+echo 'Da sollte genug Plattenplatz verfügbar sein'
 echo '(Mountpoint zu einer Partition oder einer SSD)'
 read -p 'Das Verzeichnis für die Benutze-Dateien bitte: ' UDIR 
 
