@@ -16,13 +16,15 @@ cd /opt/nextcloud-aio
 >[!WARNING]
 > Unbedingt anpassen
 
+**Zeilen hinzufügen**
+
 **nano .env**
 ```
-Zeile 4:  NC_DOMAIN=deine.domain.de
-Zeile 5:  NEXTCLOUD_PASSWORD=EinSichersPasswort # Das Password für admin
-Zeile 26: APACHE_PORT=11000  # Changing this to a different value than 443 will allow you to run it behind a web server or reverse proxy (like Apache, Nginx, Caddy, Cloudflare Tunnel and else).
-Zeile 28: COLLABORA_DICTIONARIES="de_DE en_US"
-Zeile 33: NEXTCLOUD_DATADIR=/mnt/ncaio-userData # Oder wo gnügend Speinerplatz vorhanden ist
+NC_DOMAIN=deine.domain.de
+NEXTCLOUD_PASSWORD=EinSichersPasswort # Das Password für admin
+APACHE_PORT=11000  # Changing this to a different value than 443 will allow you to run it behind a web server or reverse proxy (like Apache, Nginx, Caddy, Cloudflare Tunnel and else).
+COLLABORA_DICTIONARIES="de_DE en_US"
+NEXTCLOUD_DATADIR=/mnt/ncaio-userData # Oder wo gnügend Speinerplatz vorhanden ist
 ```
 
 **Container erstellen**
