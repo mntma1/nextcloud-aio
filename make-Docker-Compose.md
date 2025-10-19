@@ -23,7 +23,6 @@ cd /opt/nextcloud-aio
 NC_DOMAIN=deine.domain.de
 NEXTCLOUD_PASSWORD=EinSichersPasswort # Das Password für admin
 APACHE_PORT=11000  # Changing this to a different value than 443 will allow you to run it behind a web server or reverse proxy (like Apache, Nginx, Caddy, Cloudflare Tunnel and else).
-COLLABORA_DICTIONARIES="de_DE en_US"
 NEXTCLOUD_DATADIR=/mnt/ncaio-userData # Oder wo gnügend Speinerplatz vorhanden ist
 ```
 
