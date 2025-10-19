@@ -47,7 +47,6 @@ cat<<editdotenv>>$OPTAIO/.env
 NC_DOMAIN=$NCDOMAIN
 NEXTCLOUD_PASSWORD=$APASSWD # Das Password für admin
 APACHE_PORT=$APORT  # Changing this to a different value than 443 will allow you to run it behind a web server or reverse proxy (like Apache, Nginx, Caddy, Cloudflare.
-COLLABORA_DICTIONARIES="de_DE en_US"
 NEXTCLOUD_DATADIR=$USRDATA # Oder wo gnügend Speinerplatz vorhanden ist
 editdotenv
 sleep 5
